@@ -91,7 +91,7 @@ class Link {
     func show() {
         var item = top
         while item != nil {
-            print(item!.value, terminator: "->")
+            print(item!.value as Any, terminator: "->")
             item = item!.next
         }
         print()
