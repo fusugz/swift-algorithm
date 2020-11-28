@@ -1,8 +1,6 @@
-// 简单排序【插入、冒泡、选择】(升序)
 
 let array:[Int] = [2,5,3,1,7,4,9,8,6,20,10,11,13,12,19]
 
-// 插入排序
 extension Array where Element == Int {
     func insertionSort() -> [Element] {
         if self.count <= 0 {
@@ -33,7 +31,6 @@ extension Array where Element == Int {
 
 array.insertionSort()
 
-// 冒泡排序
 extension Array where Element == Int {
     func bubbleSort() -> [Element] {
         if self.count <= 1 {
@@ -59,7 +56,6 @@ extension Array where Element == Int {
 
 array.bubbleSort()
 
-// 选择排序
 extension Array where Element == Int {
     func selectionSort() -> [Element] {
         if self.count <= 1 {
